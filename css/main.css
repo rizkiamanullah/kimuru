@@ -176,7 +176,7 @@ nav {
 	top: 10vh;
 	bottom: 10vh;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.3);
 	position: fixed;
 	z-index: 100;
 	height: 80vh;
@@ -184,6 +184,8 @@ nav {
 	width: 20%;
 	font-weight: 300;
 	font-size: 1rem;
+	border-radius: 12px;
+	margin-left: -10px;
 }
 
 nav em {
@@ -306,7 +308,8 @@ nav a:hover::before {
 	left: 30%;
 	top: 10%;
 	bottom: 10%;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
 }
 
 .content::-webkit-scrollbar {
@@ -344,8 +347,11 @@ nav a:hover::before {
 	position: fixed;
 	display: block;
 	width: 100%;
-	height: 90vh;
-	background-color: #262626;
+	height: 70vh;
+	background: rgb(66, 34, 195);
+	background: linear-gradient(0deg, rgba(66, 34, 195, 1) 0%, rgba(45, 242, 253, 1) 100%);
+	/* background: rgb(34, 193, 195);
+	background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%); */
 }
 
 .parallax>use {
@@ -514,6 +520,28 @@ nav a:hover::before {
 }
 
 .first-content .ld-btn a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+
+.third-content .ld-btn {
+	display: inline-block;
+}
+
+.third-content .ld-btn a {
+	display: inline-block;
+	background-color: #fff;
+	border: 2px solid #fff;
+	padding: 8px 15px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #232323;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.third-content .ld-btn a:hover {
 	color: #fff;
 	background-color: transparent;
 }
