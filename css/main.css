@@ -185,7 +185,7 @@ nav {
 	font-weight: 300;
 	font-size: 1rem;
 	border-radius: 12px;
-	margin-left: -10px;
+	margin-left: 2%;
 }
 
 nav em {
@@ -301,15 +301,15 @@ nav a:hover::before {
 }
 
 .slides .slide .content {
-	overflow-y: scroll;
 	position: relative;
 	width: 70%;
 	height: 80%;
-	left: 30%;
+	left: 28%;
 	top: 10%;
 	bottom: 10%;
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 12px;
+	overflow: hidden;
 }
 
 .content::-webkit-scrollbar {
@@ -911,12 +911,20 @@ nav a:hover::before {
 		padding: 30px 30px 30px 30px;
 	}
 
+	#iframe {
+		position: relative;
+		margin-left: -20px;
+		width: 300px;
+		top: 0px;
+		height: 300px;
+	}
+
 }
 
 @media (max-width: 749px) {
 
 	nav {
-		width: 15vh;
+		width: 10vh;
 	}
 
 	nav .logo {
@@ -943,6 +951,14 @@ nav a:hover::before {
 		height: 20px;
 		line-height: 20px;
 		text-align: center;
+	}
+
+	#iframe{
+		position:relative;
+		margin-left: -10px;
+		width: 240px;
+		top: 0px;
+		height: 300px;
 	}
 
 	.first-content {
@@ -986,5 +1002,11 @@ nav a:hover::before {
 
 	nav a {
 		padding: 15px 20px;
+	}
+	#iframe {
+		position: relative;
+		height: 300px;
+		width: 225px;
+		top: 0px;
 	}
 }
